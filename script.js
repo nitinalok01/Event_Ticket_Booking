@@ -22,7 +22,7 @@ document.getElementById("payment-form").addEventListener("submit", async functio
     if (!orderData.id) throw new Error("Order creation failed");
 
     const options = {
-      key: "rzp_test_b3lKIMqCuqa7bP", // Replace with real Razorpay Key ID
+      key: "rzp_test_sQEemte0j5T7si", // Replace with real Razorpay Key ID
       amount: orderData.amount,
       currency: "INR",
       name: "IIITM Event",
@@ -43,3 +43,4 @@ document.getElementById("payment-form").addEventListener("submit", async functio
     console.error(err);
   }
 });
+
