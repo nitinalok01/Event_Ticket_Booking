@@ -9,8 +9,8 @@ app.use(express.static("public"));
 app.use(express.json());
 
 const razorpay = new Razorpay({
-  key_id: process.env.RAZORPAY_KEY_ID,
-  key_secret: process.env.RAZORPAY_KEY_SECRET,
+  key_id: process.env.rzp_test_sQEemte0j5T7si,
+  key_secret: process.env.DmsoR3rcVCVEvh4r56n9yPiv,
 });
 
 app.post("/create-order", async (req, res) => {
@@ -30,3 +30,4 @@ app.post("/create-order", async (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+
